@@ -10,7 +10,11 @@
 
     background-color: #0C151D;
     font-family: Poppins;
-    font-weight:500;
+    font-weight: 500;
+}
+
+a{
+    background-color: transparent;
 }
 
 main {
@@ -19,7 +23,6 @@ main {
     flex-direction: column;
     margin-top: 178px;
     gap: 48px;
-
 }
 
 h1 {
@@ -27,9 +30,7 @@ h1 {
     font-size: 46px;
 }
 
-h3,
-p,
-footer {
+* {
     color: #A3ABB2;
 }
 
@@ -42,7 +43,6 @@ footer {
 .perfil-container>img {
     width: 215px;
     height: auto;
-
 }
 
 .perfil-container .perfil-info {
@@ -50,14 +50,85 @@ footer {
     flex-direction: column;
 }
 
-.perfil-container .perfil-info .perfil-icons{
+.perfil-container .perfil-info .perfil-icons {
     display: flex;
     gap: 26px;
+    margin-top: 12px;
 }
 
 .perfil-history {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     gap: 90px;
 }
 
+.perfil-history .work {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 148px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 38px;
+}
+
+.buttons .download {
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #FFE071;
+    color: #3d3d3d;
+    padding: 24px 42px;
+}
+
+.buttons .contact {
+    border-radius: 10px;
+    background-color: #171F26;
+    color: #A3ABB2;
+    padding: 24px 81px;
+}
+
+.buttons .download>img {
+    background-color: #FFE071;
+}
+
+.wrapper-photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 65px;
+}
+
+.photos{
+    width: 757px;
+}
+
+.wrapper-photos .wrapper-buttons {
+    display: flex;
+    justify-content: center;
+    background-color: #171F26;
+    border-radius: 20px;
+    margin-top: 75px;
+    padding: 18px;
+    width: 757px;
+}
+
+.wrapper-photos .portfolio {
+    background-color: #0C151D;
+    padding: 24px 120px;
+    border-radius: 10px;
+}
+
+.wrapper-photos .wrapper-buttons .skills{
+    background-color: transparent;
+    padding: 24px 120px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px;
+}
